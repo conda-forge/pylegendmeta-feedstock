@@ -17,7 +17,7 @@ source:
   sha256: e8534d8abd762e257c4e4ecc2fbd1c0efd3df3489639be70ca72cd550ba6de11
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -36,6 +36,7 @@ requirements:
     - python >=${{ python_min }}
     - packaging
     - dbetto >=1.2.2
+    - git
     - gitpython
     - pandas
     - pyyaml
