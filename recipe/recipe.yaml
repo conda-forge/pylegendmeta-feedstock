@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pylegendmeta
-  version: 1.7.0
+  version: "1.7.2"
   # no-arch packages can't use selectors, so avoid
   # 'osx and match(python, "<3.10")' selector on psycopg2-binary <=2.9.9
   # by going to Python 3.10 even though source is 3.9+.
@@ -14,7 +14,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pylegendmeta-${{ version }}.tar.gz
-  sha256: 44806d039f2df1190564aa8b72a1f924e38c30391f5edfa0c54e3b8210f081e6
+  sha256: b39051ac03892205d4a0ecd67fc89c6f78bc69eb4b00862e23b83e248d09492e
 
 build:
   number: 0
